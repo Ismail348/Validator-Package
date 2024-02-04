@@ -1,0 +1,21 @@
+//To use the validator package, you need to install it first using npm:
+npm install validator
+Once installed, you can import and use the functions from the validator library in your JavaScript or Node.js code. Here's a simple example:const validator = require('validator');
+
+const email = 'test@example.com';
+
+if (validator.isEmail(email)) {
+  console.log('Valid email address');
+} else {
+  console.log('Invalid email address');
+}
+ // validation
+  if (!email || !password) {
+    throw Error('All fields must be filled')
+  }
+  if (!validator.isEmail(email)) {
+    throw Error('Email not valid')
+  }
+  if (!validator.isStrongPassword(password)) {
+    throw Error('Password not strong enough')
+  }
